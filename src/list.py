@@ -45,14 +45,14 @@ if p_path:
         title='Back',
         arg=p_path
     )
-    wf.setIcon(m_path='back.png', m_type='image')
+    wf.setIcon(m_path='icon.png', m_type='image')
     wf.addItem()
 if len(it) > 0:
     for i in it:
         # TODO: Remove just for debugging
         pp = PurePath(i).stem.lower()
         if (query == str() or query.lower() in PurePath(i).stem.lower()) and not(os.path.basename(i).startswith('.')):
-            ic = 'folder.png' if os.path.isdir(i) else 'workspace.png'
+            ic = 'icon.png'
             sub = 'Folder' if os.path.isdir(i) else "Workspace in Cursor"
             title = os.path.basename(i).replace('.code-workspace', '')
             wf.setItem(
