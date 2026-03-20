@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfred.acidham.vccode</string>
+	<string>com.github.fsanjuan.cursor-workspace-explorer</string>
 	<key>category</key>
 	<string>Dev</string>
 	<key>connections</key>
@@ -97,20 +97,20 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Acidham</string>
+	<string>Acidham, forked by Felix Sanjuan</string>
 	<key>description</key>
-	<string>Open VSCode Workspace</string>
+	<string>Open Cursor Workspace</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>VSCode Workspace Explorer</string>
+	<string>Cursor Workspace Explorer</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/Applications/Visual Studio Code.app</string>
+				<string>/Applications/Cursor.app</string>
 				<key>sourcefile</key>
 				<string>{var:mypath}</string>
 			</dict>
@@ -175,7 +175,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>vsc</string>
+				<string>cur</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -195,9 +195,9 @@
 				<key>scriptfile</key>
 				<string>list.py</string>
 				<key>subtext</key>
-				<string>Open Workspace in VSCode</string>
+				<string>Open Workspace in Cursor</string>
 				<key>title</key>
-				<string>Explore VSCode Workspaces</string>
+				<string>Explore Cursor Workspaces</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -296,11 +296,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Explore/open VSCode Workspaces
+	<string>Explore/open Cursor Workspaces
 
-# VSCode Workspace Explorer
+# Cursor Workspace Explorer
 
-Search&amp;Browser VS Code Workspaces</string>
+Search&amp;Browse Cursor Workspaces</string>
 	<key>uidata</key>
 	<dict>
 		<key>1E4C47DC-9E0D-4CA7-9C58-BDBCAEBAFD19</key>
@@ -375,9 +375,9 @@ Search&amp;Browser VS Code Workspaces</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Viscual Studio Code Workspace Folder</string>
+			<string>Cursor Workspace Folder</string>
 			<key>label</key>
-			<string>VS Code Workspaces</string>
+			<string>Cursor Workspaces</string>
 			<key>type</key>
 			<string>filepicker</string>
 			<key>variable</key>
