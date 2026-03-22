@@ -45,7 +45,7 @@ if p_path:
         title='Back',
         arg=p_path
     )
-    wf.setIcon(m_path='icon.png', m_type='image')
+    wf.setIcon(m_path='back.png', m_type='image')
     wf.addItem()
 if len(it) > 0:
     for i in it:
