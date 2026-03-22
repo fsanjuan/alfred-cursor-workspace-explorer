@@ -141,3 +141,6 @@ cython_debug/
 
 # Alfred workflow build output
 *.alfredworkflow
+
+# macOS
+.DS_Store
