@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 import os
-import platform
-import sys
 from pathlib import PurePath
 
 from Alfred3 import Items, Tools
@@ -52,8 +50,8 @@ if len(it) > 0:
         # TODO: Remove just for debugging
         pp = PurePath(i).stem.lower()
         if (query == str() or query.lower() in PurePath(i).stem.lower()) and not(os.path.basename(i).startswith('.')):
-            ic = 'folder.png' if os.path.isdir(i) else 'workspace.png'
-            sub = 'Folder' if os.path.isdir(i) else "Workspace in VSCode"
+            ic = 'icon.png'
+            sub = 'Folder' if os.path.isdir(i) else "Workspace in Cursor"
             title = os.path.basename(i).replace('.code-workspace', '')
             wf.setItem(
                 title=title,
