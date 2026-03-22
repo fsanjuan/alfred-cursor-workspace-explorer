@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 import os
-import platform
-import sys
 from pathlib import PurePath
 
 from Alfred3 import Items, Tools
