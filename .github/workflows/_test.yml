@@ -1,0 +1,25 @@
+name: Test (reusable)
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    permissions:
+      checks: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate info.plist
+        run: plutil -lint src/info.plist
+
+      - name: Lint Python
+        run: |
+          pip install ruff --quiet
+          ruff check src/
+
+      - name: Build workflow
+        run: bash build.sh
